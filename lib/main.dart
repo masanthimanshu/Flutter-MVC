@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvc/Screens/screens.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_mvc/firebase_options.dart';
 
@@ -16,11 +17,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text("Flutter MVC")),
-        body: const Center(child: Text("Flutter MVC")),
-      ),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
