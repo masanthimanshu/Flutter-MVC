@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mvc/Screens/home/Model/model.dart';
-import 'package:flutter_mvc/Screens/home/Controller/controller.dart';
+import '../controller/controller.dart';
+import '../model/model.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class PostsPage extends StatefulWidget {
+  const PostsPage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<PostsPage> createState() => _PostsPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _PostsPageState extends State<PostsPage> {
   List<DataModel>? _data = [];
   bool _showLoader = true;
 
