@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => const PostsPage(),
+                  builder: (_) => const UsersPage(),
                 ),
               );
             },
