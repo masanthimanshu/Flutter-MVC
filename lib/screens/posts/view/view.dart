@@ -45,12 +45,12 @@ class _PostsPageState extends State<PostsPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        _data![index].title ?? "",
+                        _data![index].title,
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text(_data![index].body ?? ""),
+                      Text(_data![index].body),
                     ],
                   ),
                 );

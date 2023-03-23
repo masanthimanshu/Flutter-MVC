@@ -8,23 +8,23 @@ List<DataModel> dataModelFromJson(String str) {
 
 class DataModel {
   DataModel({
-    this.userId,
-    this.id,
-    this.title,
-    this.body,
+    required this.userId,
+    required this.id,
+    required this.title,
+    required this.body,
   });
 
-  int? userId;
-  int? id;
-  String? title;
-  String? body;
+  final int userId;
+  final int id;
+  final String title;
+  final String body;
 
   factory DataModel.fromJson(Map<String, dynamic> json) {
     return DataModel(
-      userId: json["userId"] ?? 0,
-      id: json["id"] ?? 0,
-      title: json["title"] ?? "",
-      body: json["body"] ?? "",
+      userId: json["userId"],
+      id: json["id"],
+      title: json["title"],
+      body: json["body"],
     );
   }
 }

@@ -1,6 +1,6 @@
+import 'package:flutter/material.dart';
 import '../controller/controller.dart';
 import '../model/model.dart';
-import 'package:flutter/material.dart';
 
 class UsersPage extends StatefulWidget {
   const UsersPage({Key? key}) : super(key: key);
