@@ -52,7 +52,7 @@ class _UsersPageState extends State<UsersPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(_data![index].name ?? ""),
+                          Text(_data![index].name),
                         ],
                       ),
                       Row(
@@ -63,7 +63,7 @@ class _UsersPageState extends State<UsersPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(_data![index].email ?? ""),
+                          Text(_data![index].email),
                         ],
                       ),
                       Row(
@@ -74,7 +74,7 @@ class _UsersPageState extends State<UsersPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(_data![index].phone ?? ""),
+                          Text(_data![index].phone),
                         ],
                       ),
                       Row(
@@ -85,7 +85,7 @@ class _UsersPageState extends State<UsersPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(_data![index].website ?? ""),
+                          Text(_data![index].website),
                         ],
                       ),
                       const Padding(
@@ -105,7 +105,7 @@ class _UsersPageState extends State<UsersPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(_data![index].address?.street ?? ""),
+                          Text(_data![index].address.street),
                         ],
                       ),
                       Row(
@@ -116,7 +116,7 @@ class _UsersPageState extends State<UsersPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(_data![index].address?.city ?? ""),
+                          Text(_data![index].address.city),
                         ],
                       ),
                       Row(
@@ -127,7 +127,7 @@ class _UsersPageState extends State<UsersPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Text(_data![index].address?.zipcode ?? ""),
+                          Text(_data![index].address.zipcode),
                         ],
                       ),
                     ],
