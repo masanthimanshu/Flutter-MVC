@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../controller/controller.dart';
-import '../model/model.dart';
+import 'controller.dart';
+import 'model.dart';
 
 class PostsPage extends StatefulWidget {
   const PostsPage({Key? key}) : super(key: key);

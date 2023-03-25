@@ -35,6 +35,18 @@ class HomePage extends StatelessWidget {
             },
             child: const Text("View Users"),
           ),
+          const SizedBox(height: 20),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const SinglePost(),
+                ),
+              );
+            },
+            child: const Text("View Single Post"),
+          ),
         ],
       ),
     );

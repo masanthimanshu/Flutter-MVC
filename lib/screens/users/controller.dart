@@ -1,4 +1,4 @@
-import '../model/model.dart';
+import 'model.dart';
 import 'package:flutter_mvc/network/requests.dart';
 import 'package:flutter_mvc/network/endpoints.dart' as endpoints;
 
