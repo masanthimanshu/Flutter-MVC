@@ -47,6 +47,18 @@ class HomePage extends StatelessWidget {
             },
             child: const Text("View Single Post"),
           ),
+          const SizedBox(height: 20),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const ThemeDataView(),
+                ),
+              );
+            },
+            child: const Text("View Theme Data"),
+          ),
         ],
       ),
     );
