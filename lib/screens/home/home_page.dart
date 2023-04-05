@@ -59,6 +59,18 @@ class HomePage extends StatelessWidget {
             },
             child: const Text("View Theme Data"),
           ),
+          const SizedBox(height: 20),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const SendPostRequest(),
+                ),
+              );
+            },
+            child: const Text("Send Post Request"),
+          ),
         ],
       ),
     );
