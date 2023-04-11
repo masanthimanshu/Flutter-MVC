@@ -14,9 +14,8 @@ class _SendPostRequestState extends State<SendPostRequest> {
   bool _showLoader = true;
 
   final _payload = {
-    "title": "foo",
-    "body": "bar",
-    "userId": 1,
+    "username": "sumit@uxdlabtech.com",
+    "password": "123456"
   };
 
   _postData() async {
