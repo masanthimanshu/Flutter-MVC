@@ -15,11 +15,15 @@ class GetRequest {
 }
 
 class PostRequest {
-  Future<String?> sendJsonData({required String url, dynamic payload}) async {
+  Future<String?> sendJsonData({
+    required int resCode,
+    required String url,
+    dynamic payload,
+  }) async {
     final uri = Uri.parse(url);
     final res = await http.post(uri, body: payload);
 
-    if (res.statusCode == 200) {
+    if (res.statusCode == resCode) {
       final json = res.body;
       return json;
     }

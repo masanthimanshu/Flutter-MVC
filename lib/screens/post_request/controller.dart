@@ -6,6 +6,7 @@ class DataController {
     final data = await PostRequest().sendJsonData(
       url: endpoints.postRequest,
       payload: body,
+      resCode: 200,
     );
 
     if (data != null) return data;
